@@ -1,0 +1,23 @@
+{
+  "name": "lab2-hello",
+  "version": "1.0.0",
+  "description": "Hello, World",
+  "main": "hello.js",
+  "bin": "./hello.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leon-anavi/iot-javascript-rpi.git"
+  },
+  "keywords": [
+    "hello"
+  ],
+  "author": "Leon Anavi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leon-anavi/iot-javascript-rpi/issues"
+  },
+  "homepage": "https://github.com/leon-anavi/iot-javascript-rpi#readme"
+}
