@@ -1,0 +1,27 @@
+{
+  "name": "lab3-traffic-light",
+  "version": "1.0.0",
+  "description": "Traffic Lights on Raspberry Pi",
+  "main": "traffic-light.js",
+  "bin": "./traffic-light.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leon-anavi/iot-javascript-rpi.git"
+  },
+  "keywords": [
+    "traffic",
+    "lights"
+  ],
+  "dependencies": {
+    "onoff": ">=3.2.1"
+  },
+  "author": "Leon Anavi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leon-anavi/iot-javascript-rpi/issues"
+  },
+  "homepage": "https://github.com/leon-anavi/iot-javascript-rpi#readme"
+}
