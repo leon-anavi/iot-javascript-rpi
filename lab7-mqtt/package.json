@@ -1,0 +1,29 @@
+{
+  "name": "lab7-mqtt",
+  "version": "1.0.0",
+  "description": "Reading temperature and humidity from HTU21D I2C sensor module and publishing them through MQTT",
+  "main": "mqtt-sensor.js",
+  "bin": "./mqtt-sensor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leon-anavi/iot-javascript-rpi.git"
+  },
+  "keywords": [
+    "htu21d",
+    "i2c",
+    "mqtt"
+  ],
+  "dependencies": {
+    "htu21d-i2c": ">=0.1.0",
+    "mqtt": ">=2.18.8"
+  },
+  "author": "Leon Anavi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leon-anavi/iot-javascript-rpi/issues"
+  },
+  "homepage": "https://github.com/leon-anavi/iot-javascript-rpi#readme"
+}
