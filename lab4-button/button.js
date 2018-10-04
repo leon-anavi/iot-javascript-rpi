@@ -23,11 +23,18 @@ button.watch(function (err, value) {
 });
 
 function gentleExit() {
+	// Remove all hardware interrupt watchers
+	button.unwatchAll();
 	// Turn off the LED
 	led.writeSync(0);
 	// Free resources
 	led.unexport();
-	button.unexport(); 
+	button.unexport();
+
+	console.log("\nExiting...");
+	process.exit();
 };
+
+console.log('Please, press the button.');
 
 process.on('SIGINT', gentleExit);
