@@ -18,7 +18,8 @@
   ],
   "dependencies": {
     "htu21d-i2c": ">=0.1.0",
-    "mqtt": ">=2.18.8"
+    "mqtt": ">=2.18.8",
+    "onoff": ">=3.2.1"
   },
   "author": "Leon Anavi",
   "license": "MIT",
