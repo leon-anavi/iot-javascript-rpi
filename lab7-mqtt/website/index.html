@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>IoT MQTT Demo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="lib/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/fontawesome-all.min.css">
+  <script src="lib/jquery-3.3.1.slim.min.js"></script>
+  <script src="lib/popper.min.js"></script>
+  <script src="lib/bootstrap.min.js"></script>
+  <script src="lib/mqttws31.min.js" type="text/javascript"></script>
+  <script src="js/demo.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="pageDemo" class="container">
+  <h2>IoT MQTT Demo</h2>
+  <div id="txtInfo" class="d-none">
+    <p>Connected to <span id="txtHost" class="txt"></span> on port <span id="txtPort" class="txt"></span></p>
+    <p id="txtTemperature"></p>
+    <p id="txtHumidity"></p>
+  </div>
+  <div class="row">
+    <button id="buttonColorAll" class="buttonColor"><i class="fa fa-sun"></i></button>
+    <button id="buttonColorRed" class="buttonColor"><i class="far fa-lightbulb"></i></button>
+    <button id="buttonColorYellow" class="buttonColor"><i class="far fa-lightbulb"></i></button>
+    <button id="buttonColorGreen" class="buttonColor"><i class="far fa-lightbulb"></i></button>
+    <button id="buttonColorOff" class="buttonColor"><i class="fa fa-power-off"></i></button>
+  </div>
+
+</div>
+
+</body>
+</html>
