@@ -12,11 +12,11 @@ var topicHumidity = topicPrefix + '/humidity';
 
 htu21d.readTemperature(function (temp) {
 	console.log('Temperature: '+temp+'C');
-	client.publish(topicTemperature, '{ "temperature": '+temp+'}');
+	client.publish(topicTemperature, '{ "temperature": '+temp+' }');
 
 	// Retrieve humidity
 	htu21d.readHumidity(function (humidity) {
 		console.log('Humidity: '+humidity+'%');
-		client.publish(topicHumidity, '{ "humidity": '+humidity+'}');
+		client.publish(topicHumidity, '{ "humidity": '+humidity+' }');
 	});
 });
