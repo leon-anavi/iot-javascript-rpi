@@ -2,7 +2,7 @@
 
 var gpio = require('onoff').Gpio;
 var led = new gpio(26, 'out');
-var button = new gpio(10, 'in', 'both', {debounceTimeout: 500});
+var button = new gpio(10, 'in', 'both', {debounceTimeout: 100});
 
 var status = 0;
 // Ensure that the LED is turned off at the beginning
