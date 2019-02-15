@@ -1,6 +1,6 @@
 var mqttClient;
 // Change the host according to your own setup
-var host = "192.168.4.66";
+var host = "192.168.4.183";
 var port = 1884;
 var path = "";
 var workgroup = "workgroup";
@@ -36,9 +36,9 @@ function onConnectionLost(responseObject) {
 
 // called when a message arrives
 function onMessageArrived(message) {
-  console.log("MQTT message arrive: "+message.destinationName);
-  console.log("payload: "+message.payloadString);
   try {
+    console.log("MQTT message arrive: "+message.destinationName);
+    console.log("payload: "+message.payloadString);
     var data = JSON.parse(message.payloadString);
 
     if (topicTemperature == message.destinationName) {
@@ -62,7 +62,7 @@ $(document).ready(function() {
     mqttClient.onMessageArrived = onMessageArrived;
 
     // connect the client
-    mqttClient.connect({onSuccess:onConnect});
+    mqttClient.connect({onSuccess:onConnect, keepAliveInterval: 15});
 
     $('#buttonColorAll').on('click', function (e) {
          e.preventDefault();
