@@ -8,6 +8,9 @@ htu21d.readTemperature(function (temp) {
 
 	// Retrieve humidity
 	htu21d.readHumidity(function (humidity) {
+		if (0 > humidity) {
+			humidity = 0;
+		}
 		console.log('Humidity: '+humidity+'%');
 	});
 });
