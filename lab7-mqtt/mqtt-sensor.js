@@ -75,6 +75,10 @@ setInterval(function() {
 
 		// Retrieve humidity
 		htu21d.readHumidity(function (humidity) {
+			if (0 > humidity) {
+				// Do not allow humidity below 0%
+				humidity = 0;
+			}
 			console.log('Humidity: '+humidity+'%');
 			client.publish(topicHumidity, '{ "humidity": '+humidity+' }');
 		});
