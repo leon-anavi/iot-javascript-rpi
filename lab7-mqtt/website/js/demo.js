@@ -46,6 +46,10 @@ function onMessageArrived(message) {
     }
 
     if (topicHumidity == message.destinationName) {
+      if (0 > data.humidity) {
+        // Make sure humitidy never goes below 0%
+        data.humidity = 0;
+      }
       $('#txtHumidity').text("Humidity: "+data.humidity+"%");
     }
   } catch (e) {
